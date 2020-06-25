@@ -21,9 +21,19 @@ Reloading the AES CIS monitoring service allowed us to identify the missed recor
 ### Detection
 The customer created a Jira Ticket to alert us on this failure. Please refer JIRA Issue: (AESEDI-53447)
 ## Action Items
-hipster ipsum
+| Action Item | Type | Owner | Bug |
+| ----------- | ---- | ----- | --- |
+| Create a monitoring policy to detect missing records | prevent | SI | **DONE** |
+| Monitor the data ingesters and processors (ETL) | prevent | SI | (Jira Issue No: AESCIS-38263)**TODO** |
 ## Lessons Learned
 Need to add more monitoring plugins to monitor this critical part of the infrastructure
 
 ## Timeline
+2020-06-25 (*all times EDT*)
 
+| Time  | Description |
+| ----- | ----------- |
+| 11:56 | Discovered missing files |
+| 12:00 | Restarted the AES CIS monitoring module |
+| 12:15 | Started data processing of records |
+| 13:00 | Completed data processing of all 486,000 records |
